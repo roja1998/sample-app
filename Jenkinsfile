@@ -1,5 +1,7 @@
 pipeline {
-    agent any
+    agent{
+        label 'slave1'
+    }
 
     tools {
         maven 'Maven 3.8.5' // Ensure this matches the Maven version configured in Jenkins
